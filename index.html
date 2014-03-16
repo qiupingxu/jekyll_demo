@@ -13,7 +13,7 @@ title: 欢迎进入我的时光黑匣子
 
 	{% for post in site.posts %}
 
-		<li style="text-align: center" > <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-------------------------     {{ post.date | date_to_string }}</li>
+		<li style="text-align: center" > <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &nbsp&nbsp&nbsp&nbsp------------------------- &nbsp&nbsp&nbsp {{ post.date | date_to_string }}</li>
 
 	{% endfor %}
 

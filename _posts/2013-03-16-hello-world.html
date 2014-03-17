@@ -2,6 +2,12 @@
 layout: default
 title: Git与Jekyll初体验 
 ---
+<?php
+$post = <<< ENDPOST
+	2.在你的工作目录下新建一个文件夹username.github.com，其中username和你的账号名一样。
+	然后运行git init命令初始化仓库。
+ENDPOST;
+?>
 
 <h2 style="text-align: center">{{ page.title }}</h2>
 
@@ -9,4 +15,5 @@ title: Git与Jekyll初体验
 <br />
 <p style="text-align: center"><b>一、使用github进行代码管理。</b></p>
 <p style="text-align: center">1.首先到github官网创建一个github账号，然后到你的github上<a href="https://help.github.com/articles/create-a-repo">创建一个仓库。</a></p>
+<p><?php echo $post;?></p>
 <p style="text-align: right">{{ page.date | date_to_string }}</p>
